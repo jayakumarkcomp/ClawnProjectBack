@@ -1,0 +1,74 @@
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "Jayakumar",
+    "password": "Jayakumar123"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "Jayakumar",
+    "password": "Jayakumar123"
+}
+
+###
+GET http://localhost:3000/allUsers/
+
+###
+
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "title": " Todo",
+    "description": "first todo",
+    "user_id": 1
+}
+
+
+###
+
+GET http://localhost:3000/todos/1
+
+
+###
+
+GET http://localhost:3000/getAllTodos
+
+###
+
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{
+    "title": "My modified Todo",
+    "description": "This is my modified todo"
+}
+
+###
+
+DELETE http://localhost:3000/todos/1
+
+
+###
+
+GET http://localhost:3000/sessions
+
+
+
+###
+
+POST http://localhost:3000/loginSession
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "login_time": "2021-06-23T16:00:00.000Z",
+    "logout_time": "2021-06-23T17:00:00.000Z"
+}
